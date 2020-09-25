@@ -1,0 +1,35 @@
+.aside .logo a::before{
+    border-top: 4px solid #ffb400;
+    border-left: 4px solid #ffb400;
+}
+.aside .logo a::after{
+    border-bottom: 4px solid #ffb400;
+    border-right: 4px solid #ffb400;
+}
+
+.contact .contact-info-items .icon .fa,
+.service .service-item .service-item-inner .icon .fa,
+.about .about-content .about-text h3 span,
+body.dark .aside .nav li a:hover,
+body.dark  .aside .nav li a.active,
+.aside .nav li a:hover,
+.aside .nav li a.active{
+    color: #ffb400;
+}
+
+
+.service .service-item .service-item-inner:hover .icon,
+.Academics  .timeline .circle-dot,
+.Academics  .timeline .timeline-item::before,
+.Skills  .skill-item  .progress .progress-in,
+.skill-title h2::after,
+.skill-title h2::before,
+.btn,
+.section-title h2::after,
+.section-title h2::before,
+.aside .nav-toggler span,
+.aside .nav-toggler span::before,
+.aside .nav-toggler span::after,
+.home .intro .social-link a{
+     background-color: #ffb400;
+}
