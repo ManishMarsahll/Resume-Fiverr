@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    </style>
+</head>
+<body>
+    <header class="text-gray-700 body-font">
+      <!--navbar w3s-->
+      <div class="topnav" id="myTopnav">
+        <a class="nav-item nav-link active" href="#klm">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#def">Acadamics</a>
+                <a class="nav-item nav-link" href="#abc">Projects</a>
+                <a class="nav-item nav-link" href="#xyz">contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      <!--Bootstrap nav bar not working
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Resume</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#klm">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#def">Acadamics</a>
+                <a class="nav-item nav-link" href="#abc">Projects</a>
+                <a class="nav-item nav-link" href="#xyz">contact</a>
+              </div>
+            </div>
+          </nav>
+        -->
+          
+        </header>
+        
+        <section class="text-gray-700 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="960x0.jpg">
+              </div>
+              <div id="hij" class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Fullname<br>
+                    <h6>About me</h6>
+                </h1>
+                <p class="mb-8 leading-relaxed">Carrer Objective</p>
+                <div class="flex justify-center">
+                 
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--Skills-->
+          <section class="col-md-12 col-sm-20 col-xs-20 col-md-offset-3 pl-24 pr-24 first profile rez_about">
+            
+            <div class="flex flex-col text-center w-full mb-0">
+                <div  tabindex="-1" style="outline: none;"><h1>skills</h1></div>
+              </div>
+            <!-- Start About section -->
+            <div class="col-md-20 col-sm-12 col-xs-12 omega  about text-center">
+              <p class="about_info">description of skills</p>
+                
+              <div class="rzm_progress_bar">
+                  <h4>C</h4>
+              
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                          
+                  </div>
+              </div><!--Progress Item One-->
+          
+              <div class="rzm_progress_bar">
+                  <h4>Android</h4>
+                  
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+                  </div>
+              </div><!--Progress Item Two-->
+          
+              <div class="rzm_progress_bar">
+                  <h4>Java</h4>
+                  
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        
+                  </div>
+              </div><!--Progress Item three-->
+          
+              <div class="rzm_progress_bar">
+                  <h4>HTML/CSS</h4>
+                  
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                  </div>
+              </div><!--Progress Item three-->
+          
+              <div class="rzm_progress_bar">
+                  <h4>Phyton</h4>
+                  
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                  </div>
+                  
+             </div><!--Progress Item four-->
+            </div>
+            
+            <!-- End About -->
+            
+            
+            
+          </section>
+
+          <!--Education-->
+          <section class="text-gray-700 body-font">
+            <div class="flex flex-col text-center w-full mt-20">
+              <div id="def" tabindex="-1" style="outline: none;"><h1>EDUCATION</h1></div>
+              </div>
+            <div class=" px-0 py-12 mx-auto">
+              <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-2">SCHOOL</h2>
+                  <p class="leading-relaxed text-base"><ul>
+                    <li>SCHOOL NAME:</li>
+                    <li>BOARD:</li>
+                    <li>PERCENTAGE:</li>
+                    <li>YEAR OF PASSING:</li>
+                 </ul></p> 
+                </div>
+              </div>
+              <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-2">COLLEGE</h2>
+                  <p class="leading-relaxed text-base"><ul>
+                    <li>COLLEGE NAME:</li>
+                    <li>BOARD:</li>
+                    <li>PERCENTAGE:</li>
+                    <li>YEAR OF PASSING:</li>
+                   </ul></p>
+                  
+                </div>
+                
+                <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                   </svg>
+                </div>
+              </div>
+              <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+                <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-2">HIGHER EDUCATION</h2>
+                  <p class="leading-relaxed text-base"><ul>
+                    <li>DEGREE:</li>
+                    <li>COLLEGE NAME:</li>
+                    <li>BOARD:</li>
+                    <li>AGGREGATE:</li>
+                    <li>YEAR OF PASSING:</li>
+                 </ul></p>
+                  
+                </div>
+              </div>
+              
+            </div>
+          </section>
+          
+
+          <!--projects-->
+          <section class="text-gray-700 body-font">
+            <div class="container px-5 py-24 mx-auto">
+               
+              <div class="flex flex-col text-center w-full mb-20">
+                <div id="abc" tabindex="-1" style="outline: none;"><h1>PROJECTS</h1></div>
+                
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">  Dscription</p>
+              </div>
+              <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="66181506-projects-icon-projects-website-button-on-white-background-.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Project</h1>
+                      <p class="leading-relaxed">Details of projects</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="project.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Project</h1>
+                      <p class="leading-relaxed">Details of projects</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="66181506-projects-icon-projects-website-button-on-white-background-.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Project</h1>
+                      <p class="leading-relaxed">Details of projects</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="project.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Project</h1>
+                      <p class="leading-relaxed">Details of projects</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="66181506-projects-icon-projects-website-button-on-white-background-.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Project</h1>
+                      <p class="leading-relaxed">Details of projects</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="project.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Project</h1>
+                      <p class="leading-relaxed">Details of projects</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+<!--Contacts-->
+        
+     
+
+      <!--FOTTER-->
+<footer class="text-gray-700 body-font" id="xyz">
+  
+  <div class="bg-gray-200">
+    <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Contact</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2020 Resume —
+        <a href="https://www.linkedin.com/in/naveen-jainar-09778018b" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@naveenjainar</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="ml-3 text-gray-500">
+           <svg width="1em" height="1em" viewBox="0 0 16 16" class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+          </svg>
+        </a> <p>&nbsp;</p><p>&nbsp;</p>
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>  
+          <a class="ml-3 text-gray-500">
+          <svg width="1em" height="1em" viewBox="0 0 16 20" class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
